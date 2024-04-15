@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.todo_card {
+  background-color: #fff;
+  border-radius: 8px;
+  /*top-down  left-right */
+  padding: 20px 10px;
+  width: 500px;
+  max-height: 500px;
+  position: relative;
+}
+
+.todo_card_header {
+  width: 100%;
+  /* background-color: red; */
+  height: 100px;
+  margin-bottom: 20px;
+}
+.todo_card_header h1 {
+  margin-bottom: 10px;
+  color: #002765;
+}
+.todo_form {
+  width: 100%;
+  /* background-color: green; */
+  background: #edeef0;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.todo_input_text {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-right: 0;
+  font-size: 20px;
+  background: transparent;
+
+  padding: 05px 10px;
+  box-sizing: border-box;
+}
+
+.submit_btn {
+  margin-left: 0;
+  height: 100%;
+  width: 90px;
+  border-radius: 30px;
+  position: absolute;
+  right: 01px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: #ff5945;
+  color: #fff;
+}
+
+.todo_list {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+/* styling card body */
+
+.todo_card_body {
+  /* background-color: green; */
+}
+
+.todo_list_item {
+  padding: 10px 0px;
+}
+
+.todo_list_item i:first-child {
+  margin-right: 20px;
+}
+
+.todo_list_item i:last-child {
+  position: absolute;
+  right: 20px;
+}
+
+i.icon_selected {
+  background-color: #ff5945; /* Set the background color */
+  padding: 2px; /* Add padding for visibility */
+  border-radius: 50%; /* Optional: Add rounded corners */
+}
+
+li.list_selected {
+  text-decoration: line-through;
+}
